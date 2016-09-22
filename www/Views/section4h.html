@@ -1,0 +1,107 @@
+
+         <div class="page-header" style="color:white;">
+         <h3>SECTION 4: EQUIPMENT,SUPPLIES, AND MEDICINES*</h3>
+       </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-body">
+             <form role="form">
+             <table class="table">
+                <thead class="cf colorLightBlue">
+                  <tr class="info">
+                  <th><h5>8. Basic Supplies</h5></th>
+                  <th><h5> Y/N </h5></th>
+                  <th><h5> How many? </h5></th>
+                   </tr>
+                </thead>
+            
+                <tbody>
+                    
+                <tr class = "row-fluid">
+                <td>Cotton non sterile</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item1YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item1YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item1Number"></input>
+                </td> 
+                </tr>
+                    
+                <tr class = "row-fluid">
+                <td>Gauze 2x2 sterile pack</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item2YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item2YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item2Number"></input>
+                </td>  
+                </tr>
+                    
+                <tr class = "row-fluid">
+                <td>Gauze 4x4 sterile pack</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item3YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item3YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item3Number"></input>
+                </td>  
+                </tr>
+                    
+                <tr class = "row-fluid">
+                <td>Alcohol 70% solution</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item4YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item4YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item4Number"></input>
+                </td>  
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Betadine 10% Povidone Iodine</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item5YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item5YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item5Number"></input>
+                </td>  
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Lysol 50% solution for soaking</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4h.Item6YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4h.Item6YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+            <input type = "number" id="appendedInputButton" ng-model="section4h.Item6Number"></input>
+                </td>  
+                </tr>
+    
+            </tbody>   
+        </table>
+                 </form>
+            </div>
+        </div>
+    
+
+
+<ng-whonavbar> </ng-whonavbar>
+<toaster-container toaster-options="{'time-out': 3000, 'close-button':true}"></toaster-container>

@@ -1,0 +1,378 @@
+
+      <div class="page-header" style="color:white;">
+         <h3>Section 1 : Basic Health Facility Information</h3>
+       </div>
+   
+    <div class="panel panel-primary">
+     <div class="panel-heading">
+      <h3 class="panel-title">ASSESSOR INFORMATION</h3>
+     </div>
+         <div class="panel-body">
+             <form role="form">
+             <table class="table">
+                 <thead class="cf colorLightBlue">
+                   <tr>
+                     <th>Name(s) of Assessor(s)</th> 
+                     <th>Contact Number</th>
+                     <th>Email</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.assessor1"/></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.contact1" /></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.email1" /></td>   
+                    </tr>
+                                         <tr>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.assessor2" /></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.contact2" /></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.email2" /></td>   
+                    </tr>
+                                         <tr>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.assessor3" /></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.contact3" /></td>
+<td> <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" ng-model="section1.email3" /></td>   
+                    </tr>
+ 
+             </table>
+                 
+                 <div class="panel panel-default ">
+                   <div class="panel-body cf colorLightBlue">
+                     <div class="form-group">
+                  <div class="form-inline" >
+                   <label >Date of assessment</label>
+                    <div class="container-fluid text-center">
+                        <input type="date" id="appendedInputButton" ng-model="section1.dateOfAssessment">
+                    </div>
+                  </div>
+                     </div>
+                 </div>
+                 </div>
+                 </form>
+          
+         </div><!--row-->
+      </div> 
+   
+     
+    
+
+
+    <!---PROVINCE-->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">PROVINCE NAME</h3>
+    </div>
+    
+    <div class="panel-body cf colorLightBlue">
+       <form role="form">
+        
+           
+           <div class="form-inline">
+              <label>Province</label>
+
+              <input type="text" class="form-control" 
+                     style="width:100%;"
+                     ng-model="section1.provinceName"/>
+
+         </div>
+        </form>
+    </div>
+</div>
+    
+    <!---City/Municipality-->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">MUNICIPALITY / CITY NAME</h3>
+    </div>
+    
+    <div class="panel-body cf colorLightBlue">
+       <form role="form">
+        
+           
+           <div class="form-inline">
+              <label>City / Municipality</label>
+              <input type="text" class="form-control" style="width:100%;" ng-model="section1.cityMunicipality" />
+         </div>
+        </form>
+    </div>
+</div>
+        <!---BARANGAY INFORMATION-->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">BARANGAY INFORMATION</h3>
+    </div>
+    
+    <div class="panel-body">
+       <form role="form">
+           <table class="table">
+             <tbody>
+               <tr>
+                 <td class="cf colorLightBlue"><label>Barangay Name</label></td>
+                 <td><input type="text" class="form-control" ng-model="section1.barangayName"/></td>
+               </tr>
+                 <tr>
+                 <td class="cf colorLightBlue"><label>Barangay Population</label></td>
+                 <td>
+                   <label class="radio-inline">
+
+                       <input type="radio" name="brgyPop"/><b>Pre-Yolanda</b>
+                  </label>
+                     <label class="radio-inline">
+                       <input type="radio" name="brgyPop"/><b>Post-Yolanda</b>
+
+                  </label>
+                 </td>
+               </tr>
+                 <tr>
+                 <td class="cf colorLightBlue"><label>Barangay code(PSGC)</label></td>
+
+                 <td><input type="text" class="form-control" ng-model="section1.barangayCode"/></td>
+
+               </tr>
+             </tbody>
+           </table>
+        </form>
+    </div>
+</div>
+    
+    <!--HEALTH FACILTY-->
+    
+    <div class="panel panel-primary">
+       <div class="panel-heading">
+          <h3 class="panel-title">HEALTH FACILITY (HF) TYPE</h3>
+        </div>
+        
+        <div class="panel-body">
+           <form role="form">
+               
+               <table class="table">
+                 <tbody>
+                  <tr>
+                    <td class="cf colorLightBlue">
+                      <label>HF Name</label>
+                    </td> 
+                    <td><input type="text" class="form-control" ng-model="section1.hfName" /></td>
+                  </tr>
+                  <tr>
+                    <td class="cf colorLightBlue">
+                      <label>DOH HF Code</label>
+                    </td>
+        <td><input type="text" class="form-control" ng-model="section1.dohHfCode" disabled /></td>
+                  </tr>
+                   <tr>
+                    <td class="cf colorLightBlue">
+                      <p><i>Please check the appropriate HF Type</i></p>
+                    </td>
+                    <td>
+                      <div class="checkbox">
+                     <input type="checkbox" value="1" ng-model="section1.withDelivery"/><label>BHC / BHS with delivery room</label>
+                       </div> 
+                        <div class="checkbox">
+                     <input type="checkbox" ng-model="section1.withoutDelivery"/><label>BHC / BHS without delivery room</label>
+                     </div>
+                    <div class="checkbox">
+                     <input type="checkbox" ng-model="section1.satelliteBHS"/><label>Satellite BHS</label>
+                    </div>
+                    
+                    </td>
+                  </tr>
+                     <tr>
+                    <td class="cf colorLightBlue"
+                        >
+                      <p><i>Please check which describes where the HF is constructed</i></p>
+                    </td>
+                    <td>
+                    <div class="checkbox">
+                     <input type="checkbox" ng-model="section1.lguOwnedLand" /><label>LGU-owned Land</label>
+                 </div> 
+                    <div class="checkbox">
+                     <input type="checkbox" ng-model="section1.privatelyOwnedLand" /><label>Privately-owned Land</label>
+                </div>
+                        <p>Other</p>
+                   <i>If other, please specify</i>
+                <textarea class="form-control"></textarea>
+                    </td>   
+                  </tr>
+                    <tr>
+                    <td class="cf colorLightBlue">
+                      <p><i>If Satellite BHS, please indicate where:</i></p>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                 
+                     <label>In a Barangay Hall ?</label>
+                     <input type="text" class="form-control" ng-model="section1.barangayHall" />
+                   <label>In dedicated building ?</label>
+                     <input type="text" class="form-control" ng-model="section1.dedicatedBuilding" />
+                   <label>In former BHC / BHS ?</label>
+                     <input type="text" class="form-control" ng-model="section1.formerBhs" />
+            </div>
+                    </td>
+                  </tr>
+                 </tbody>
+               </table>
+            
+            </form>
+        </div>
+     </div>
+
+ <!-- SETTING -->
+
+     <div class="panel panel-primary">
+       <div class="panel-heading">
+           <h3 class="panel-title">SETTING</h3>
+       </div>
+       <div class="panel-body">
+           <table class="table">
+              <tbody>
+                <tr>
+                   <td span="2" class="cf colorLightBlue"><p>An Urban Barangay that has been legally proclaimed
+                     as being urban. Such areas include towns, cities and metropolitan areas.
+                    </p>
+                    </td>
+                    <td colspan="2">
+                        <div class="checkbox">
+                        <input type="checkbox" ng-model="section1.urban" /><label>Urban</label>
+                        </div>
+                    </td>
+                </tr>
+                   <tr>
+                   <td span="2" class="cf colorLightBlue"><p>All other areas that are not classified as being urban.
+                    This include comercial farms, small settlements, rural villages and other areas
+                    which are further away from towns and cities.
+                    </p>
+                    </td>
+                    <td colspan="2">
+                        <div class="checkbox">
+                        <input type="checkbox" ng-model="section1.rural" /><label>Rural</label>
+                        </div>
+                    </td>
+                </tr>
+               </tbody>
+           </table>
+       </div>
+    </div>
+
+ <!-- GEOLOCATION /GPS INFORMATION -->
+  <div class="panel panel-primary">
+       <div class="panel-heading">
+           <h3 class="panel-title">GEOLOCATION / GPS INFORMATION</h3>
+       </div>
+       <div class="panel-body">
+           <table class="table">
+              <tbody>
+                <tr>
+                   <td class="cf colorLightBlue">
+                      <label>Number of Satellite signal received</label>
+                    </td>
+                    <td> <input type="text" class="form-control" ng-model="section1.numberOfSatellite" /></td>
+                </tr>    
+                <tr>
+                   <td class="cf colorLightBlue">
+                      <label>Accuracy</label>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" ng-model="section1.accuracy" />
+                    </td>
+                </tr>
+                <tr>  
+                    <td class="cf colorLightBlue">
+                      <label>Latitude (N)</label>
+                    </td>
+                     <td>
+                      <input type="text" class="form-control" ng-model="section1.latitude"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue">
+                      <label>Longitude (E)</label>
+                    </td>
+                     <td>
+                      <input type="text" class="form-control" ng-model="section1.longitude"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue">
+                      <label>Waypoint (Check One)</label>
+                    </td>
+                     <td>
+                      <div class="checkbox">
+                          <input type="checkbox" ng-model="section1.waypoint1" />
+                          <label>In front of health the facility</label>
+                      </div>
+                         <div class="checkbox">
+                          <input type="checkbox" ng-model="section1.waypoint2" />
+                          <label>Nearby location (for example, A park, Commercial Space or Landmark)</label>
+                      </div>
+                    </td>
+                </tr>
+                   <tr>
+                     <td class="cf colorLightBlue">Notes about GPS reading, if any. Include
+                       about Geocoding Information about <br> BHS Sub-Station here
+                       if applicable.</td>
+                      <td>
+                        <textarea class="form-control" rows="3" ng-model="section1.notesAboutGPS" ></textarea>
+                       </td>
+                  </tr>
+               </tbody>
+           </table>
+       </div>
+      </div>
+      
+      
+   <!-- HEALTH FINANCING -->
+  <div class="panel panel-primary">
+       <div class="panel-heading">
+           <h3 class="panel-title">HEALTH FINANCING</h3>
+       </div>
+       <div class="panel-body">
+           <form role="form">
+           <table class="table">
+              <tbody>
+                <tr>
+                   <td class="cf colorLightBlue">
+                      <label>Presence of Donation Box ?</label>
+                    </td>
+                    <td>
+                      <div class="checkbox">
+                       <input type="checkbox" ng-model="section1.presencePreYolanda" /><label>Pre-Yolanda</label>  
+                      </div>
+                    </td>
+                     <td>
+                      <div class="checkbox">
+                       <input type="checkbox" ng-model="section1.presencePostYolanda" /><label>Post-Yolanda</label>  
+                      </div>
+                    </td>
+                </tr> 
+                  <tr>
+                   <td class="cf colorLightBlue">
+                      <label>Midwife receives Philhealth Capitation ?</label>
+                    </td>
+                    <td>
+                      <div class="checkbox">
+                       <input type="checkbox" ng-model="section1.midwifePreYolanda" /><label>Pre-Yolanda</label>  
+                      </div>
+                    </td>
+                     <td>
+                      <div class="checkbox">
+                       <input type="checkbox" ng-model="section1.midwifePostYolanda" /><label>Post-Yolanda</label>  
+                      </div>
+                    </td>
+                </tr> 
+               </tbody>  
+           </table>
+        </form>
+       </div> 
+   
+    </div>
+
+
+
+<ng-whonavbar> </ng-whonavbar>
+
+
+    <script src="/www/Content/js/bootstrap-datetimepicker.js"></script>
+   <script src="/www/Client/datepicker.js"></script>
+
+
+ 

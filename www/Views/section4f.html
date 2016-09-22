@@ -1,0 +1,79 @@
+
+         <div class="page-header" style="color:white;">
+         <h3>SECTION 4: EQUIPMENT,SUPPLIES, AND MEDICINES*</h3>
+       </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-body">
+             <form role="form">
+             <table class="table">
+                <thead class="cf colorLightBlue">
+                  <tr class="info">
+                  <th><h5>6. Cold Chain Equipment</h5></th>
+                  <th><h5> Y/N </h5></th>
+                  <th><h5> Functioning or Non-Functioning? </h5></th>
+                   </tr>
+                </thead>
+            
+                <tbody>
+                <tr class = "row-fluid">
+                <td>Vaccine Refrigerator</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4f.Item1YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4f.Item1YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4f.Item1Func"></textarea>
+                </td>  
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Vaccine Carrier</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4f.Item2YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4f.Item2YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4f.Item2Func"></textarea>
+                </td>  
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Ice Packs</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4f.Item3YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4f.Item3YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4f.Item3Func"></textarea>
+                </td>  
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Vaccine Thermometer</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4f.Item4YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4f.Item4YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4f.Item4Func"></textarea>
+                </td> 
+                </tr>
+                    
+            </tbody>  
+        </table>
+                 </form>
+            </div>
+        </div>
+    
+
+<ng-whonavbar> </ng-whonavbar>
+<toaster-container toaster-options="{'time-out': 3000, 'close-button':true}"></toaster-container>

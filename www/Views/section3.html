@@ -1,0 +1,164 @@
+
+<div class="page-header" style="color:white;">
+         <h3>SECTION 3: HUMAN RESOURCES</h3>
+</div>
+  
+      <div class="panel panel-primary">
+               <div class="panel-heading">
+                  <h3 class="panel-title"> Please Indicate Number of Human Resources: </h3>
+                 </div>
+      
+              
+         <div class="panel-body">
+          <form role="form">
+              
+       <table class="table table-responsive">
+          <thead>
+            
+            
+             <tr>
+                <th ></th>
+                <th>Pre-Yolanda</th>
+                <th>Post-Yolanda</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <th class="cf colorLightBlue">Rural Health Midwives (RHM)</th>
+                <th><Input type="number" ng-model="section3.numberOfHR_RHM_Pre" class="resizedTextbox"></th>
+                <th><Input type="number" ng-model="section3.numberOfHR_RHM_Post" class="resizedTextbox"></th>
+             </tr>
+               <tr>
+                <th class="cf colorLightBlue" >Barangay Nutritional Specialists (BNS)</th>
+                <th><Input type="number" ng-model="section3.numberOfHR_BNS_Pre" class="resizedTextbox"></th>
+                <th><Input type="number" ng-model="section3.numberOfHR_BNS_Post" class="resizedTextbox"></th>
+             </tr>
+               <tr> 
+                <th class="cf colorLightBlue" >Barangay Sanitation Inspectors (BSI)</th>
+               <th><Input type="number" ng-model="section3.numberOfHR_BSI_Pre" class="resizedTextbox"></th>
+                <th><Input type="number" ng-model="section3.numberOfHR_BSI_Post" class="resizedTextbox"></th>
+             </tr>
+             </tr>
+               <tr>
+                <th class="cf colorLightBlue"  >Barangay Health Workers (BHW)</th>
+                 <th><Input type="number" ng-model="section3.numberOfHR_BHW_Pre" class="resizedTextbox"></th>
+                <th><Input type="number" ng-model="section3.numberOfHR_BHW_Post" class="resizedTextbox"></th>
+             </tr>
+         </tbody>
+       </table>
+       
+    </div>
+    </div>
+        </br></br></br>
+           
+        
+<div class="panel panel-primary">
+        <div class="panel-heading">
+           <h3 class="panel-title">RHM Information </h3>
+        </div>
+        <div class="panel-body">
+         <form role="form">
+         <table class="table table-responsive">
+           
+          
+          <tbody>
+              
+                <tr>
+                     <td class="cf colorLightBlue"  align="left">RHM Name</td>
+                     <td align="center">
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" 
+                                ng-model="section3.rhmName"/>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td  class="cf colorLightBlue" align="left">RHM Contact Number</td>
+                    <td align="center">
+                        <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" 
+                                ng-model="section3.rhmContact"/>
+                    </td>
+                </tr>
+              <tr>
+                    <td class="cf colorLightBlue"  align="center">
+                        Is RHM serving other barangay(s?) 
+                    <td align="center">
+                        <form action="">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" ng-model="section3.isRHMYes" value="true">Yes
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" ng-model="section3.isRHMNo" value="false">No
+                    </form>
+                    </td>
+                </tr>
+                </br>
+                <tr>
+                    <td  class="cf colorLightBlue" align="left">
+                        If Yes, please list:
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" style="max-width:300px" placeholder="1.)" 
+                                ng-model="section3.bgryList1"/>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="cf colorLightBlue"></td>
+                    <td>
+                        <input type="text" class="form-control" style="max-width:300px" placeholder="2.)" 
+                                ng-model="section3.bgryList2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="3.)" 
+                                ng-model="section3.bgryList3"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="4.)" 
+                                ng-model="section3.bgryList4"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="5.)" 
+                                ng-model="section3.bgryList5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="6.)" 
+                                ng-model="section3.bgryList6"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="7.)" 
+                                ng-model="section3.bgryList7"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cf colorLightBlue" ></td>
+                    <td>
+                         <input type="text" class="form-control" style="max-width:300px" placeholder="8.)" 
+                                ng-model="section3.bgryList8"/>
+                    </td>
+                </tr>
+                
+        </tbody>
+       </table>
+      </form>
+     </div>
+   </div>  
+
+
+<ng-whonavbar> </ng-whonavbar>
+   
+    
+
+
+

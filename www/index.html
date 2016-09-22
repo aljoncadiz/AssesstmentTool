@@ -1,0 +1,229 @@
+<html ng-cloak ng-app = "whoAPP">
+<head>
+	<title>heRAMS</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0," />
+	<style type="text/css">
+		/* Prevent copy paste for all elements except text fields */
+		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+		input, textarea  { -webkit-user-select:text; }
+		body { background-color:white; color:black }
+		#appendedInputButton {width:70%;}
+		.container-fluid { padding-left: 10px; padding-right: 10px;}
+		.colorLightBlue { background-color:#add8e6;}
+		.noOverflow{overflow-x:hidden;}
+		
+	</style>
+  
+
+
+	<script src='intelxdk.js'></script>
+    <script src="Scripts/cordova.js"></script>
+	<script src ="Scripts/jquery/jquery-2.1.1.js"></script>
+	<script src='Scripts/angular.js'></script>
+    <script src="Scripts/toaster.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src='Scripts/angular-route.js'></script>
+    <script src='Scripts/angular-resource.js'></script> 
+    <script src="Client/module.js"></script> 
+    <!--script src="Client/factories.js"></script>
+    <!----- Factories ------> 
+    <script src="Client/section1Factory.js"></script>
+    <script src="Client/section2Factory.js"></script>
+    <script src="Client/section3Factory.js"></script>
+    <script src="Client/section4aFactory.js"></script>
+    <script src="Client/section4bFactory.js"></script>
+    <script src="Client/section4cFactory.js"></script>
+    <script src="Client/section4dFactory.js"></script>
+    <script src="Client/section4eFactory.js"></script>
+    <script src="Client/section4fFactory.js"></script>
+    <script src="Client/section4gFactory.js"></script>
+    <script src="Client/section4hFactory.js"></script>
+    <script src="Client/section5aFactory.js"></script>
+    <script src="Client/section5bFactory.js"></script>
+    <script src="Client/section6aFactory.js"></script>
+    <script src="Client/section6bFactory.js"></script>
+    <!--script src="Client/facilitiesFactory.js"></script>
+    <!--<script src="Client/factories.js"></script>
+    <!----- Factories ------>
+    
+    <!----- Controllers ------>  
+    <script src="Client/section1Ctrl.js"></script>
+    <script src="Client/section2Ctrl.js"></script>
+    <script src="Client/section3Ctrl.js"></script>
+    <script src="Client/section4aCtrl.js"></script>
+    <script src="Client/section4bCtrl.js"></script>
+    <script src="Client/section4cCtrl.js"></script>
+    <script src="Client/section4dCtrl.js"></script>
+    <script src="Client/section4eCtrl.js"></script>
+    <script src="Client/section4fCtrl.js"></script>
+    <script src="Client/section4gCtrl.js"></script>
+    <script src="Client/section4hCtrl.js"></script>
+    <script src="Client/section5aCtrl.js"></script>
+    <script src="Client/section5bCtrl.js"></script>
+    <script src="Client/section6aCtrl.js"></script>
+    <script src="Client/section6bCtrl.js"></script>
+    <script src="Client/homeCtrl.js"></script>
+    <!----- Controllers ------>
+    
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Client/datepicker.js"></script>
+    
+     <link href="css/bootstrap.css" rel="stylesheet"/>
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" class="uib-framework-theme">
+    <link rel="stylesheet" type="text/css" href="Content/tablestyle.css">
+    <link href="css/site.css" type="text/css" rel="stylesheet" />
+    <link href="css/toaster.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+    // Wait for device API libraries to load
+    //
+    
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        //alert("Back Button Listening");
+    }
+
+    // Handle the back button
+    function onBackKeyDown() {
+       var scope = angular.element(document.getElementById("home")).scope();
+        scope.$apply(function(){scope.show();});
+      //  navigator.app.exitApp();
+    }
+
+    </script>
+
+</head>
+    
+
+<body ng-controller="HomeCtrl" style="background:#4682B4; top:0px" onload="onLoad()" ng-init = "facilityCodeRetrieve()" id="home">  
+ <div class="indexContainer" ng-show="indexPage" style="height:100%;">
+   
+   <div class="col-xs-4" style="background:#ADD8E6">
+    
+    <div class="row"  style="height:60%;">
+    
+    <div class="col-xs-11">
+    <p>
+       <img src="res/image1.png" style='width:100%;height:110%;padding-top:2vh;' border="0" alt="Null">
+    </p>
+    </div>
+    <div class="col-xs-1"></div>
+    </div>
+    <div class="row" style="height:40%;">
+       <div class="row" id="bar">
+           <div id="heramsCaption">
+             <p>Health Sector </br>  Response to                                                                                                        </br>Typhoon </br> Yolanda
+             </div>
+       </div>
+    
+    </div>
+   </div>  
+   <div class="col-xs-8">  
+       
+       
+       <div class="row" style="height:30%;background-color:white;">
+            
+                <p>
+                   <img src="res/who.png" style='width:30vmin;height:30vmin;padding-left:3vw;' border="0" alt="Null"><img src="res/herams.png" style='width:30vmin;height:30vmin;padding-left:3vw;' border="0" alt="Null">
+                </p>
+                
+            
+            <div class="row-fluid" style="background-color:#314179;width:100%;height:10vh;padding-left:2vw;"></div>
+        </div>
+       
+       <div class="row" style="height:70%;padding-top:16vh;">
+       <div class="col-xs-1"></div>
+           <div class="col-xs-10">
+               
+              <div class="row">  
+                 <div ng-show="createPage">
+                   <div class="panel panel-primary">
+                    <div class="panel-heading">
+                          <h3 class="panel-title">Please Select Facilty</h3>
+                     </div>
+                     <div class="panel-body">
+                        <form role="form">
+                           <div class="form-group">
+
+                               <select class="form-control" ng-model="facilityName" >
+                    <option ng-repeat="facility in facilityCode">{{facility.code}}</option>
+                               </select>
+                               </br>
+<a ng-click="retrieveFacilitySections(facilityName);showIndexForce();setFacilityCode(facilityName)" class="btn btn-info" >
+
+                            <span class="glyphicon glyphicon-folder-open" style="font-size: 3vmin;"></span> Open   </a>
+
+                            <a ng-click="showCreate()" class="btn btn-info" >
+
+                            <span class="glyphicon glyphicon-folder-open" style="font-size: 3vmin;"></span> Add   </a>
+
+            <a ng-click="delete();facilityCodeRetrieve();pop2()" class="btn btn-danger" style="float:right;">
+          <span class="glyphicon glyphicon-ok" style="font-size: 2vmin;"></span>  Delete
+          </a>
+
+                       </div>
+                    </form>
+                 </div>
+                </div>
+             </div> 
+             <div ng-hide="createPage">
+                 <div class="panel panel-primary">
+                     <div class="panel-heading">
+                          <h3 class="panel-title">Create New Facilty</h3>
+                     </div>
+                     <div class="panel-body">
+                        <form role="form">
+                           <div class="form-group">
+                             <label>Facility Code:</label>
+                               <input type="text" class="form-control" ng-model="fCode"/>
+                           </br>
+         <a ng-click="showCreate()" class="btn btn-default" >
+          <span class="glyphicon glyphicon-remove" style="font-size: 2vmin;"></span> Cancel  
+          </a>
+          <a ng-click="showCreate();facilityCodeSave(fCode);facilityCodeRetrieve()" class="btn btn-info">
+          <span class="glyphicon glyphicon-ok" style="font-size: 2vmin;"></span>  Create
+          </a>     
+        
+                             
+         </div>
+                            </form>
+                         </div>
+                       </div> 
+
+
+
+                 </div>
+                </div>
+             </div>
+         <div class="col-xs-1"></div>
+        </div> 
+    </div>
+ </div>    
+	<div ng-hide="indexPage" style="height:100%;z-index:5;">
+              <div  ng-show="facilityPage" style="z-index:5;">
+                    <ng-whoheader></ng-whoheader>
+                    <ng-facilitypage></ng-facilitypage>
+              </div>
+              <div ng-hide="facilityPage" class="row-fluid" style="height:100%;z-index:5;">
+                    <div ng-view="">
+
+                    </div>
+              </div>
+    </div>
+
+
+
+    <toaster-container toaster-options="{'time-out': 5000, 'close-button':true}"></toaster-container>
+    
+
+</body>
+		
+	
+</html>

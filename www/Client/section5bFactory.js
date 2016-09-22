@@ -1,0 +1,113 @@
+whoAPP.factory('section5bFactory', ['$http','$q',function($http,$q) {
+
+   var section5bFactory = {};
+    
+    
+    section5bFactory.rdb5bRow1PreYes= " ";
+    section5bFactory.rdb5bRow1PreNo= " ";
+    section5bFactory.rdb5bRow1PostYes= " ";
+    section5bFactory.rdb5bRow1PostNo= " ";
+    section5bFactory.rdb5bRow2PreYes= " ";
+    section5bFactory.rdb5bRow2PreNo= " ";
+    section5bFactory.rdb5bRow2PostYes= " ";
+    section5bFactory.rdb5bRow2PostNo= " ";
+    section5bFactory.rdb5bRow3PreYes= " ";
+    section5bFactory.rdb5bRow3PreNo= " ";
+    section5bFactory.rdb5bRow3PostYes= " ";
+    section5bFactory.rdb5bRow3PostNo= " ";
+    section5bFactory.rdb5bRow4PreYes= " ";
+    section5bFactory.rdb5bRow4PreNo= " ";
+    section5bFactory.rdb5bRow4PostYes= " ";
+    section5bFactory.rdb5bRow4PostNo= " ";
+    section5bFactory.rdb5bRow5PreYes= " ";
+    section5bFactory.rdb5bRow5PreNo= " ";
+    section5bFactory.rdb5bRow5PostYes= " ";
+    section5bFactory.rdb5bRow5PostNo= " ";
+    section5bFactory.rdb5bRow6PreYes= " ";
+    section5bFactory.rdb5bRow6PreNo= " ";
+    section5bFactory.rdb5bRow6PostYes= " ";
+    section5bFactory.rdb5bRow6PostNo= " ";
+    section5bFactory.rdb5bRow7PreYes= " ";
+    section5bFactory.rdb5bRow7PreNo= " ";
+    section5bFactory.rdb5bRow7PostYes= " ";
+    section5bFactory.rdb5bRow7PostNo= " ";
+    section5bFactory.rdb5bRow8PreYes= " ";
+    section5bFactory.rdb5bRow8PreNo= " ";
+    section5bFactory.rdb5bRow8PostYes= " ";
+    section5bFactory.rdb5bRow8PostNo= " ";
+    section5bFactory.rdb5bRow9PreYes= " ";
+    section5bFactory.rdb5bRow9PreNo= " ";
+    section5bFactory.rdb5bRow9PostYes= " ";
+    section5bFactory.rdb5bRow9PostNo= " ";
+    section5bFactory.rdb5bRow10PreYes= " ";
+    section5bFactory.rdb5bRow10PreNo= " ";
+    section5bFactory.rdb5bRow10PostYes= " ";
+    section5bFactory.rdb5bRow10PostNo= " ";
+    section5bFactory.rdb5bRow11PreYes= " ";
+    section5bFactory.rdb5bRow11PreNo= " ";
+    section5bFactory.rdb5bRow11PostYes= " ";
+    section5bFactory.rdb5bRow11PostNo= " ";
+    section5bFactory.rdb5bRow12PreYes= " ";
+    section5bFactory.rdb5bRow12PreNo= " ";
+    section5bFactory.rdb5bRow12PostYes= " ";
+    section5bFactory.rdb5bRow12PostNo= " ";
+
+ section5bFactory.save = function(section5b){
+     
+     section5bFactory = section5b;
+};
+    
+section5bFactory.reset = function(){
+    section5bFactory.rdb5bRow1PreYes= " ";
+    section5bFactory.rdb5bRow1PreNo= " ";
+    section5bFactory.rdb5bRow1PostYes= " ";
+    section5bFactory.rdb5bRow1PostNo= " ";
+    section5bFactory.rdb5bRow2PreYes= " ";
+    section5bFactory.rdb5bRow2PreNo= " ";
+    section5bFactory.rdb5bRow2PostYes= " ";
+    section5bFactory.rdb5bRow2PostNo= " ";
+    section5bFactory.rdb5bRow3PreYes= " ";
+    section5bFactory.rdb5bRow3PreNo= " ";
+    section5bFactory.rdb5bRow3PostYes= " ";
+    section5bFactory.rdb5bRow3PostNo= " ";
+    section5bFactory.rdb5bRow4PreYes= " ";
+    section5bFactory.rdb5bRow4PreNo= " ";
+    section5bFactory.rdb5bRow4PostYes= " ";
+    section5bFactory.rdb5bRow4PostNo= " ";
+    section5bFactory.rdb5bRow5PreYes= " ";
+    section5bFactory.rdb5bRow5PreNo= " ";
+    section5bFactory.rdb5bRow5PostYes= " ";
+    section5bFactory.rdb5bRow5PostNo= " ";
+    section5bFactory.rdb5bRow6PreYes= " ";
+    section5bFactory.rdb5bRow6PreNo= " ";
+    section5bFactory.rdb5bRow6PostYes= " ";
+    section5bFactory.rdb5bRow6PostNo= " ";
+    section5bFactory.rdb5bRow7PreYes= " ";
+    section5bFactory.rdb5bRow7PreNo= " ";
+    section5bFactory.rdb5bRow7PostYes= " ";
+    section5bFactory.rdb5bRow7PostNo= " ";
+    section5bFactory.rdb5bRow8PreYes= " ";
+    section5bFactory.rdb5bRow8PreNo= " ";
+    section5bFactory.rdb5bRow8PostYes= " ";
+    section5bFactory.rdb5bRow8PostNo= " ";
+    section5bFactory.rdb5bRow9PreYes= " ";
+    section5bFactory.rdb5bRow9PreNo= " ";
+    section5bFactory.rdb5bRow9PostYes= " ";
+    section5bFactory.rdb5bRow9PostNo= " ";
+    section5bFactory.rdb5bRow10PreYes= " ";
+    section5bFactory.rdb5bRow10PreNo= " ";
+    section5bFactory.rdb5bRow10PostYes= " ";
+    section5bFactory.rdb5bRow10PostNo= " ";
+    section5bFactory.rdb5bRow11PreYes= " ";
+    section5bFactory.rdb5bRow11PreNo= " ";
+    section5bFactory.rdb5bRow11PostYes= " ";
+    section5bFactory.rdb5bRow11PostNo= " ";
+    section5bFactory.rdb5bRow12PreYes= " ";
+    section5bFactory.rdb5bRow12PreNo= " ";
+    section5bFactory.rdb5bRow12PostYes= " ";
+    section5bFactory.rdb5bRow12PostNo= " ";
+    console.log("section 5b cleared");
+    };
+
+  return section5bFactory;
+}]);

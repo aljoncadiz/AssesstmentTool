@@ -1,0 +1,55 @@
+
+
+         <div class="page-header" style="color:white;">
+         <h3>SECTION 4: EQUIPMENT,SUPPLIES, AND MEDICINES*</h3>
+       </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-body">
+             <form role="form">
+             <table class="table">
+                 <thead class="cf colorLightBlue">
+                  <tr class="info">
+                  <th><h5>3. Resuscitation kits + Airways</h5></th>
+                  <th><h5> Y/N </h5></th>
+                  <th><h5> Functioning or Non-Functioning? </h5></th>
+                   </tr>
+                </thead>
+            
+                <tbody>
+                <tr class = "row-fluid">
+                <td>Resuscitation set: infant ambu w/ 2 neonatal face mask x term and preterm </td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4c.Item1YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4c.Item1YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4c.Item1Func"></textarea>
+                </td> 
+                </tr>
+                
+                <tr class = "row-fluid">
+                <td>Rubber Section bulb or penguin suction for excessive nasal and oral secretion extraction</td>
+                <td>
+                    <form action="">
+                    <input type="radio" ng-model="section4c.Item2YesNo" value="true"> Yes
+                    <input type="radio" ng-model="section4c.Item2YesNo"  value="false"> No
+                    </form>
+                </td>
+                <td class = "row-fluid text-center">
+                <textarea type = "text" id="appendedInputButton" ng-model="section4c.Item2Func"></textarea>
+                </td>
+                </tr>    
+            </tbody>     
+        </table>
+                 </form>
+            </div>
+
+        </div> 
+
+ 
+
+<ng-whonavbar> </ng-whonavbar>
+<toaster-container toaster-options="{'time-out': 3000, 'close-button':true}"></toaster-container>

@@ -1,0 +1,35 @@
+<div style="height:20vh;">
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="navbar-inner navbar-content-center">
+
+                          <div class="row">
+                        <div class="col-xs-4">
+                            <a ng-href="{{section.previous}}" 
+                                style="display:{{section.displayPrev}};"  
+                               ng-click = "save()">
+                               <span class="glyphicon glyphicon-backward"><p>Previous</p></span>  
+                            </a>
+                        </div>
+                            <div class="col-xs-4">
+                                <div class="collapse navbar-collapse">
+                                    <div class="nav navbar-nav">
+                                     <a class="navbar-brand" href="#/facility" 
+                                        ng-click= "showFacilityPage();save()">
+                            <span class="glyphicon glyphicon-home"></span>                 
+                                     </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                              <a ng-href="{{section.next}}"
+                                 style="display:{{section.displayNext}};" 
+                                 ng-click = "save()">
+                               <span class="glyphicon glyphicon-forward"><p>Next</p></span>  
+                              </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+</nav> 

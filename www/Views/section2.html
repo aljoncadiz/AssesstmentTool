@@ -1,0 +1,416 @@
+
+<div class="page-header" style="color:white;">
+         <h3>SECTION 2: INFRASTRUCTURE DAMAGE & RESTORATION REPORT</h3>
+</div>
+
+
+
+
+<!-- STATUS OF BHS DAMAGE -->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">STATUS OF BHS DAMAGE</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <tbody>
+         <tr>
+           <td class="cf colorLightBlue">
+            What is the extent of damage sustained by the BHS ? (Check One)
+           </td>
+           <td>
+             <div class="radio">
+                 <input type="radio" name="damage" value="No Damage" ng-model="section2.statusOfBHSDamage" /><b>No damage: </b><label>No damage sustained</label>
+             </div>
+               <div class="radio">
+                 <input type="radio" name="damage" value="Totally Damage" ng-model="section2.statusOfBHSDamage" /><b>Totally damaged: </b><label>beyond any repair / rehabilation</label>
+             </div>
+               <div class="radio">
+                 <input type="radio" name="damage" value="Partially Damage" ng-model="section2.statusOfBHSDamage" /><b>Partially damaged: </b><label>Damage can be either major or minor (see below)                 </label> <br>
+                  <b>a. Major damage:</b>
+                   <label>requires total rehabilation on roofing, ceiling, wiring, etc.</label>
+                   <br>
+                   <b>a. Minor damage:</b>
+                   <label>requires little or no intervention / maintenance on roofing  <br> and  / or ceiling and /
+                   or wiring and / or windows.</label>
+               <tr>
+                   <td class="cf colorLightBlue">Is the BHS functioning ? </td>
+                   <td>
+                     <label class="radio-inline">
+                        <input type="radio" name="BHSFunction" value="No" ng-model="section2.bhsFunctioning" /><label><b>No</b></label>  
+                     </label>
+                        <label class="radio-inline">
+                        <input type="radio" name="BHSFunction" value="Yes" ng-model="section2.bhsFunctioning" ng-init="section2.bhsFunctioning = ' '"/><label><b>Yes</b></label>  
+                     </label>
+                   </td>
+               </tr>
+               <tr>
+                   <td class="cf colorLightBlue">If non-functioning, service provided in (Select One): </td>
+                   <td>
+                   <div class="radio">
+                         <input type="radio" value="Tents" name="service" ng-model="section2.tents" /><label>1.) <b>Tents</b></label>
+                   </div>
+                       <div class="radio">
+                         <input type="radio" value="Temporary Location" name="service" ng-model="section2.tempLocation" /><label>2.) <b>Temporary Location: </b>school, church,
+                           community centre, etc.</label>
+                       </div>
+                       <div class="radio">
+                         <input type="radio" value="Transitional Health Station"  name="service" ng-model="section2.transHealthStation" /><label>3.) <b>Transitional Health Station: </b>makeshift BHS constructed out of non-permanent materials.</label>
+                       </div>
+                       <div class="radio">
+                         <input type="radio" value="Mobile Teams"  name="service" ng-model="section2.mobileTeams" /><label>4.) <b>Mobile Teams: </b></label>
+                       </div>
+                       <div class="radio">
+                         <input type="radio" value="None"  name="service" ng-model="section2.none" /><label>5.) <b>None: </b></label>
+                       </div>
+                       <div class="radio">
+                         <label>6.) <b>Other (please specify): </b></label>
+                        <textarea class="form-control" rows="3" ng-model="section2.other" ></textarea>
+                       </div>
+                   </td>
+               </tr>
+             </div>
+           </td>
+         </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STATUS OF BHS RESTORATION -->
+
+<div class="panel panel-primary">
+   <div class="panel-heading">
+     <h3 class="panel-title">STATUS OF BHS RESTORATION</h3>   
+   </div>
+    <div class="panel-body">
+       <table class="table">
+          <tbody>
+             <tr>
+                 <td class="cf colorLightBlue">
+                     What is the extent of restoration of the BHS ? (Select One)
+                 </td>
+                 <td colspan="3">
+                   <label>1.) Restored</label>
+                   <br>
+                     <div class="radio">
+                         <input type="radio" name="restoration" value="Repaired" ng-model="section2.repaired" />  <label><b>a. Repaired:</b> Small-scale restoration for a BHS that has been <br> minor damaged.</label>
+                     </div>  
+                     <div class="radio">
+                         <input type="radio"  name="restoration" value="Rehabilitated" ng-model="section2.rehabilitated" />  <label><b>b. Rehabilitated:</b> Large-scale restoration for a BHS that has been majorly damaged.</label>
+                     </div>  
+                     <div class="radio">
+                         <input type="radio"  name="restoration" value="Recontructed" ng-model="section2.recontructed" ng-init="section2.recontructed =' '"/>  <label><b>a. Recontructed:</b> Creation of a completely new BHS because the former BHS <br> has been destroyed or damage beyond rehabilitation.</label>
+                     </div>  
+                     <div class="radio">
+                         <input type="radio"  name="restoration" value=" Not Restored" ng-model="section2.notRestored" /><label><b>2.) Not Restored</b></label>
+                     </div>
+                 
+                 </td>
+             </tr>
+              <tr>
+                 <td class="cf colorLightBlue">If no restoration, is there a plan to restore ?</td>
+                 <td colspan="2">
+                  <div class="radio">
+<input type="radio" name="norestoration" value="No" ng-model="section2.isBHSRestorationNoRestored"  value = "false"/><label><b>No</b></label>
+                  </div>
+                  </td>
+                  <td>
+                  <div class="radio">
+<input type="radio" name="norestoration" value="Yes" ng-model="section2.isBHSRestorationNoRestored"  value = "true"/><label><b>Yes</b></label>
+                  </div>
+                      <label>Responsible Agency/ies</label>
+                        <div class="form-group">
+<input type="text" class="form-control" ng-model="section2.noRestorationForResponsibleAngency1" />
+                        </div>
+                      <div class="form-group">
+<input type="text" class="form-control"  ng-model="section2.noRestorationForResponsibleAngency2" />
+                      </div>
+                      <div class="form-group">
+<input type="text" class="form-control"  ng-model="section2.noRestorationForResponsibleAngency3" />
+                      </div>
+                        </div>
+                  </td>
+        
+              </tr>
+    <tr>
+                 <td class="cf colorLightBlue">If restoration, is it complete ?</td>
+                 <td colspan="2">
+                  <div class="radio">
+                         <input type="radio" name="restorationComplete" value="No" ng-model="section2.isBHSRestorationCompleted" /><label><b>No</b></label>
+                  </div>
+                  </td>
+                  <td>
+                  <div class="radio">
+                         <input type="radio" name="restorationComplete" value="Yes" ng-model="section2.isBHSRestorationCompleted" /><label><b>Yes</b></label>
+                  </div>
+                      <label>Responsible Agency/ies</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.restorationCompleteForResponsibleAgency1"/>
+                        </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.restorationCompleteForResponsibleAgency2"/>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.restorationCompleteForResponsibleAgency3"/>
+                      </div>
+                        </div>
+                  </td>
+        
+              </tr>
+          <tr>
+                 <td class="cf colorLightBlue">If restoration is incomplete, is it on-going ?</td>
+                 <td colspan="2">
+                  <div class="radio">
+                         <input type="radio" value = "No" name="incompleteRestoration" ng-model="section2.isBHSRestorationIncompleted" /><label><b>No</b></label>
+                  </div>
+                  </td>
+                  <td>
+                  <div class="radio">
+                         <input type="radio"  value = "Yes" name="incompleteRestoration" ng-model="section2.isBHSRestorationIncompleted" /><label><b>Yes</b></label>
+                  </div>
+                      <label>Responsible Agency/ies</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.incompleteRestorationCompleteForResponsibleAgency1"/>
+                        </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.incompleteRestorationCompleteForResponsibleAgency2" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.incompleteRestorationCompleteForResponsibleAgency3" />
+                      </div>
+                        </div>
+                  </td>
+        
+              </tr>
+<tr>
+                 <td class="cf colorLightBlue">If BHS is being reconstructed, is it being relocated to a different site ?</td>
+                 <td colspan="2">
+                  <div class="radio">
+                         <input type="radio" value = "No" name="reconstruction" ng-model="section2.isBHSbeingReconstructed" /><label><b>No</b></label>
+                  </div>
+                  </td>
+                  <td>
+                  <div class="radio">
+                         <input type="radio" value = "Yes" name="reconstruction" ng-model="section2.isBHSbeingReconstructed" /><label><b>Yes</b></label>
+                  </div>
+                      <div class="form-inline">
+                          <label>Location</label>
+                          <input type="text" class="form-control" ng-model="section2.location" />
+                      </div>
+                      <label>Responsible Angency/ies</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control" ng-model="section2.bhsReconstructedResponsibleAngency1" />
+                        </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control"  ng-model="section2.bhsReconstructedResponsibleAngency2" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control"  ng-model="section2.bhsReconstructedResponsibleAngency3" />
+                      </div>
+                        </div>
+                  </td>
+        
+              </tr>
+<tr>
+                 <td class="cf colorLightBlue">If the BHS is being relocated, is the land upon which it will be constructed privately owned ?</td>
+                 <td colspan="2">
+                  <div class="radio">
+                         <input type="radio" name="bhsBeingRelocated" value="No" ng-model="section2.isBHSbeingRelocated" /><label><b>No</b></label>
+                  </div>
+                  </td>
+                  <td>
+                  <div class="radio">
+                         <input type="radio" name="bhsBeingRelocated" value="Yes" ng-model="section2.isBHSbeingRelocated" /><label><b>Yes</b></label>
+                  </div>
+                      <div class="form-inline">
+                          <label>Owner's Name</label>
+                          <input type="text" class="form-control" ng-model="section2.ownersName" />
+                      </div>
+                      <label>Contact Information</label>
+                        <textarea class="form-control" ng-model="section2.contactInformation"></textarea> 
+                  </td>
+        
+              </tr>
+          </tbody>
+       </table>
+    </div>
+</div>
+
+<!--UTILITIES -->
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+     <h3 class="panel-title">UTILITIES</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+        <thead>
+            <th class="cf colorLightBlue"><i>Please select YES or NO</i></th>
+            <th>Pre-Yolanda</th>
+            <th>Post-Yolanda</th>
+        </thead>
+      <tbody>
+          
+        <tr>
+          <td class="cf colorLightBlue"><label>Water Supply</label></td>
+            <td>
+              <label class="radio-inline">
+                    <input name="preWaterSupply" value="No" type="radio" ng-model="section2.preYolandaWaterSupply" /><b>No</b>
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+                    <input name="preWaterSupply" value="Yes" type="radio" ng-model="section2.preYolandaWaterSupply" /><b>Yes</b>
+                  </label>
+            </td>
+            <td>
+             <label class="radio-inline">
+                    <input name="postWaterSupply" type="radio"  value="No" type="radio" ng-model="section2.postYolandaWaterSupply" /><b>No</b>  
+                  </label>
+                  <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+                    <input name="postWaterSupply" type="radio"  value="Yes" type="radio" ng-model="section2.postYolandaWaterSupply" /><b>Yes</b>
+                  </label>
+            </td>
+        </tr> 
+          <tr>
+          <td class="cf colorLightBlue"><label>Power Supply</label></td>
+            <td>
+                  <label class="radio-inline">
+
+                    <input type="radio"  value="No" name ="preYolandaPowerSupply" ng-model="section2.preYolandaPowerSupply"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio" value="Yes" name ="preYolandaPowerSupply" ng-model="section2.preYolandaPowerSupply"/><b>Yes</b>
+
+                  </label>
+            </td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio" value="No" name ="postYolandaPowerSupply" ng-model="section2.postYolandaPowerSupply"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio" value="Yes" name="postYolandaPowerSupply" ng-model="section2.postYolandaPowerSupply"/><b>Yes</b>
+
+                  </label>
+            </td>
+        </tr>  
+          <tr>
+          <td class="cf colorLightBlue"><label>Communication</label></td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio" value="No" name="preYolandaCommunication" ng-model="section2.preYolandaCommunication"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio" value="Yes" name="preYolandaCommunication"  ng-model="section2.preYolandaCommunication"/><b>Yes</b>
+
+                  </label>
+            </td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio" value="No" name="postYolandaCommunication" ng-model="section2.postYolandaCommunication"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input  type="radio" value="Yes" name="postYolandaCommunication" ng-model="section2.postYolandaCommunication"/><b>Yes</b>
+
+                  </label>
+            </td>
+        </tr>  
+          <tr>
+          <td class="cf colorLightBlue"><label>Sanitary Toilet</label></td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio" value="No"  name ="preYolandaSanitaryToilet"ng-model="section2.preYolandaSanitaryToilet"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio"  value="Yes" name="preYolandaSanitaryToilet"  ng-model="section2.preYolandaSanitaryToilet"/><b>Yes</b>
+
+                  </label>
+            </td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio"  value="No" name ="postYolandaSanitaryToilet" ng-model="section2.postYolandaSanitaryToilet"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio"  value="Yes" name="postYolandaSanitaryToilet"  ng-model="section2.postYolandaSanitaryToilet"/><b>Yes</b>
+
+                  </label>
+            </td>
+        </tr>  
+          <tr>
+          <td class="cf colorLightBlue"><label>Drainage</label></td>
+            <td>
+             <label class="radio-inline">
+
+                    <input type="radio"  value="No" name="preYolandaDrainage" ng-model="section2.preYolandaDrainage"/><b>No</b>
+
+                  </label>
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio" value="Yes" name="preYolandaDrainage" ng-model="section2.preYolandaDrainage"/><b>Yes</b>
+
+            </td>
+            <td>
+              <label class="radio-inline">
+
+                    <input type="radio" value="No" name="postYolandaDrainage" ng-model="section2.postYolandaDrainage"/><b>No</b>
+
+                 <label class="vertical-bar">
+                      |
+                  </label>
+                  <label class="radio-inline">
+
+                    <input type="radio" value="Yes"  name="postYolandaDrainage" ng-model="section2.postYolandaDrainage"/><b>Yes</b>
+
+            </td>
+        </tr>  
+      </tbody>
+    </table> 
+  </div>
+</div>
+
+
+<ng-whonavbar> </ng-whonavbar>
+

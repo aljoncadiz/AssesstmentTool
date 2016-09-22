@@ -1,0 +1,442 @@
+        .alignCenter {
+                margin: auto;
+                width: 70%;
+              
+        }
+        .resizedTextbox {
+            width: 50px; 
+            height: 40px;
+            text-align:center;
+            font-weight: bold;
+            text-transform:uppercase;
+            }
+        .rhmInfoTextbox1{
+            width: 200px; 
+            height: 20px;
+        }
+        .rhmInfoTextbox2{
+            width: 40px; 
+            height: 20px;
+        }
+        .listRhmInfoTextbox{
+            width: 250px; 
+            height: 20px;
+        }
+table{
+    border-collapse:collapse;
+    
+}
+html,body{
+height: 100%;
+width: 100%;
+    margin-top: 10px;
+}
+
+
+
+caption.tableTitle{
+    background-color:#0066CC;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    font-size:150%;
+}
+caption.rhmTableTitle{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:#428bca;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    font-size:100%;
+}
+#rhmTableTitle{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:#428bca;
+    color: white;
+    font-weight: bold;
+   
+}
+th.specs{
+    background-color:#A0A0A0;
+    color: black;
+    font-weight: bold;
+    font-size:100;
+}
+td.specs{
+    background-color:#A0A0A0;
+    color: black;
+    font-weight: bold;
+    font-size:100;
+   }
+
+tr.caption1{
+     background-color:#A0A0A0;
+    
+     background-color:#191970;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#indexHeader{
+     height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+colorWhite{
+   background: white; 
+}
+
+
+
+#heramsCaption{
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    color: white;
+    font-size: 5vmin;
+    padding-top: 4vh;
+    
+ 
+}
+
+
+
+
+
+#AppTitle{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bolder;
+    color: #314179;
+    font-size: 5vmin;
+    vertical-align: middle;
+    
+  
+ 
+}
+#globeGlyph{
+    vertical-align: middle;
+}
+
+#indexTitle {
+padding-top: 0px;
+padding-left: 5%;
+font-size: 120%;
+}
+
+
+
+
+#bar{
+    background-color:#314179;
+    position: absolute;
+    margin-top: 3vmin;
+    margin-left:1.5vw;
+    height: 35%;
+    width:83%;
+}
+
+#indexTitleContainer{
+    background-color:#FFFFFF;
+    position: absolute;
+    height: 70%;
+    width:100%;
+    
+}
+
+#indexNavContainer{
+    
+   background-color:#ADD8E6;
+   position: absolute;
+   padding-top: 0px;
+     padding-left: 10%;
+    height: 100%;
+    width: 90%;
+ 
+    
+}
+#AppTitleFooter{
+    background-color:#428bca;
+    position: absolute;
+    padding-top: 5vh;
+   
+    height: 5%;
+    width: 100%;
+}
+
+#AppTitleFooter2{
+    background-color:#428bca;
+    position: absolute;
+    padding-top: 5vh;
+   
+    height: 30%;
+    width: 100%;
+}
+
+#navTitle{
+    background-color:#314179;
+    height: 10%;
+    width: 105%;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #4682B4;
+    
+    color: white;
+    
+    vertical-align: middle;
+    padding-left: 5%;
+    vertical-align: bottom;
+}
+#navTitleCaption{
+padding-top: 2vh;
+font-size: 5vmin;
+left: -3vw;
+}
+#navFooter{
+background-color:#314179;
+height: 10%;
+width: 105%;
+float: bottom;
+}
+
+
+#indexNav{
+position: absolute;
+height: 60vh;
+width: 100%;
+right: 0;
+padding-top: 3vh; 
+}
+
+
+#buttonLinks{
+  padding-top:3vh;
+  
+}
+
+#myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, white), color-stop(1, #FFFFFF));
+	background:-moz-linear-gradient(top, white 5%, #FFFFFF 100%);
+	background:-webkit-linear-gradient(top, white 5%, #FFFFFF 100%);
+	background:-o-linear-gradient(top, white 5%, #FFFFFF 100%);
+	background:-ms-linear-gradient(top, white 5%, #FFFFFF 100%);
+	background:linear-gradient(to bottom, white 5%, #FFFFFF 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#FFFFFF',GradientType=0);
+	background-color:white;
+	border:1px solid grey;
+	display:inline-block;
+	cursor:pointer;
+	color:#4682B4;
+	font-family:arial;
+	
+	font-weight:bold;
+	padding:2vh 2vw;
+	text-decoration:none;
+    font-size:4vmin;
+    width: 100%;
+    height: 17.7%;
+    max-height: 10vh;
+ 
+    
+}
+#myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFFFFF), color-stop(1, white));
+	background:-moz-linear-gradient(top, #FFFFFF 5%, white 100%);
+	background:-webkit-linear-gradient(top, #FFFFFF 5%, white 100%);
+	background:-o-linear-gradient(top, #FFFFFF 5%, white 100%);
+	background:-ms-linear-gradient(top, #FFFFFF 5%, white 100%);
+	background:linear-gradient(to bottom, #FFFFFF 5%, white 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='white',GradientType=0);
+	background-color:#FFFFFF;
+    
+    vertical-align: middle;
+    font-size:4vmin;
+    width: 100%;
+    height: 17.7%;
+    max-height: 12vh;
+}
+#myButton:active {
+	position:relative;
+	margin-top: 0 px;
+    font-size:4vmin;
+    width: 100%;
+    height: 17.7%;
+    max-height: 12vh;
+   
+}
+
+#tabTitle{
+ padding:0px;
+ height:100%;
+}
+
+
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
+.navbar.header {min-height:4vh; !important}
+.navbar{
+    text-align: center; 
+  }
+
+.navbar-collapse.collapse {
+        text-align: center; /* Set this */
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+}
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0;
+  
+}
+
+.glyphicon {
+font-family: 'Glyphicons Halflings';
+-webkit-font-smoothing: antialiased;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+font-size: 20px;
+}
+
+
+#tabName{
+  left: -2vw;
+  text-align: center;
+  font-size: 4vmin;
+}
+
+a.navTabs {
+  background: #428bca;
+  color:white;
+  width: 24vmin;
+  height: 5.2vmax;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #428bca;
+cursor: default;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: #eee;
+color: #ADD8E6;
+}
+
+#facilityIndex{
+    line-height: 5vh;
+    float: right;
+    font-size: 2.5vmin;
+}
+
+
+#glossarySearch{
+    float: left;
+    padding-left: 2vw;
+	text-align: center;
+    font-size: 4vmin;
+    font-family: Arial;
+    font-style: bolder;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+/* Styles */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* Styles */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+
+
+
+
+
+
+
